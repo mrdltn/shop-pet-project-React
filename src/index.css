@@ -43,11 +43,39 @@ nav {
 
 @media (min-width: 767px) {
     .cart {
-        top: 5rem;
+        top: 7rem;
         bottom: unset;
         right: 4rem;
     }
 }
 
 .cart-quantity {
+}
+
+.basket-list {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 50rem;
+    max-width: 95%;
+    box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+        5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.basket-close {
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: 1.4rem;
+    color: blue;
+}
+
+.basket-delete {
+    cursor: pointer;
+    /* position: absolute; */
+    /* top: 0.5rem;
+    right: 1.4rem; */
+    color: red;
 }
