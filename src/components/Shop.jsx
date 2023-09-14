@@ -38,6 +38,11 @@ export default function Shop() {
         }
     };
 
+    const deleteFromBasket = (itemId) => {
+        const newOrder = order.filter((el) => el.offerId !== itemId);
+        setOrder(newOrder);
+    };
+
     const handleBasketShow = () => {
         setIsBasketShow(!isBasketShow);
     };
@@ -63,7 +68,11 @@ export default function Shop() {
                 <GoodsList goods={goods} addToBasket={addToBasket} />
             )}
             {isBasketShow && (
-                <BasketList order={order} handleBasketShow={handleBasketShow} />
+                <BasketList
+                    order={order}
+                    handleBasketShow={handleBasketShow}
+                    deleteFromBasket={deleteFromBasket}
+                />
             )}
         </main>
     );

@@ -62,6 +62,7 @@ nav {
     max-width: 95%;
     box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
         5px 5px 15px 5px rgba(0, 0, 0, 0);
+    animation: show 500ms ease-in-out;
 }
 
 .basket-close {
@@ -78,4 +79,15 @@ nav {
     /* top: 0.5rem;
     right: 1.4rem; */
     color: red;
+}
+
+@keyframes show {
+    from {
+        top: 70%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
 }
