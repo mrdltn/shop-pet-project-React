@@ -5,11 +5,27 @@ function BasketItem(props) {
         regularPrice,
         quantity,
         deleteFromBasket = Function.prototype,
+        incrementQuantityGoodsInBasket = Function.prototype,
+        decrementQuantityGoodsInBasket = Function.prototype,
     } = props;
 
     return (
         <li className='collection-item'>
-            {displayName} * {quantity} = {regularPrice * quantity}
+            {displayName}{' '}
+            <i
+                className='material-icons basket-quantity'
+                onClick={() => decrementQuantityGoodsInBasket(offerId)}
+            >
+                remove
+            </i>{' '}
+            x {quantity}{' '}
+            <i
+                className='material-icons basket-quantity'
+                onClick={() => incrementQuantityGoodsInBasket(offerId)}
+            >
+                add
+            </i>{' '}
+            = {regularPrice * quantity}
             <span
                 className='secondary-content'
                 onClick={() => deleteFromBasket(offerId)}
