@@ -34,6 +34,9 @@ function BasketList(props) {
             )}
             <li className='collection-item active'>
                 Total Price: $ {totalPrice}
+                <button className='secondary-content btn-order'>
+                    Place an order
+                </button>
             </li>
             <i
                 className='material-icons basket-close'

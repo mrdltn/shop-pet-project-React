@@ -97,3 +97,25 @@ nav {
     vertical-align: middle;
     color: #26a69a;
 }
+
+.btn-order {
+    text-decoration: none;
+    color: #fff;
+    background-color: #50ac2c;
+    text-align: center;
+    letter-spacing: 0.5px;
+    -webkit-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;
+    cursor: pointer;
+    font-size: 14px;
+    outline: 0;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 26px;
+    /* line-height: 36px; */
+    padding: 0 16px;
+    text-transform: uppercase;
+    /* vertical-align: middle;
+    -webkit-tap-highlight-color: transparent; */
+}
