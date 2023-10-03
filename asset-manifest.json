@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shop-pet-project-React/static/css/main.fcc7ce03.css",
+    "main.js": "/shop-pet-project-React/static/js/main.5172fc31.js",
+    "index.html": "/shop-pet-project-React/index.html",
+    "main.fcc7ce03.css.map": "/shop-pet-project-React/static/css/main.fcc7ce03.css.map",
+    "main.5172fc31.js.map": "/shop-pet-project-React/static/js/main.5172fc31.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcc7ce03.css",
+    "static/js/main.5172fc31.js"
+  ]
+}
