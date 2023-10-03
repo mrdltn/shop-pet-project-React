@@ -1,1 +1,1 @@
-# pet-project online-shop
+# https://mrdltn.github.io/shop-pet-project-React/
