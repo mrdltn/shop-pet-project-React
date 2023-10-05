@@ -1,13 +1,19 @@
+import { useContext } from 'react';
+import { ShopContext } from '../context';
 import { BasketItem } from './BasketItem';
 
-function BasketList(props) {
-    const {
-        order = [],
-        handleBasketShow = Function.prototype,
-        incrementQuantityGoodsInBasket = Function.prototype,
-        decrementQuantityGoodsInBasket = Function.prototype,
-        deleteFromBasket = Function.prototype,
-    } = props;
+function BasketList() {
+    // const {
+    // order = [],
+    // handleBasketShow = Function.prototype,
+    // incrementQuantityGoodsInBasket = Function.prototype,
+    // decrementQuantityGoodsInBasket = Function.prototype,
+    // deleteFromBasket = Function.prototype,
+    // } = props;
+
+    const { order = [], handleBasketShow = Function.prototype } =
+        useContext(ShopContext);
+
     const totalPrice = order.reduce((sum, el) => {
         return sum + el.regularPrice * el.quantity;
     }, 0);
@@ -19,13 +25,13 @@ function BasketList(props) {
                 order.map((item) => (
                     <BasketItem
                         key={item.offerId}
-                        incrementQuantityGoodsInBasket={
-                            incrementQuantityGoodsInBasket
-                        }
-                        decrementQuantityGoodsInBasket={
-                            decrementQuantityGoodsInBasket
-                        }
-                        deleteFromBasket={deleteFromBasket}
+                        // incrementQuantityGoodsInBasket={
+                        //     incrementQuantityGoodsInBasket
+                        // }
+                        // decrementQuantityGoodsInBasket={
+                        //     decrementQuantityGoodsInBasket
+                        // }
+                        // deleteFromBasket={deleteFromBasket}
                         {...item}
                     />
                 ))

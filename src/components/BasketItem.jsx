@@ -7,13 +7,16 @@ function BasketItem(props) {
         displayName,
         regularPrice,
         quantity,
-        deleteFromBasket = Function.prototype,
-        incrementQuantityGoodsInBasket = Function.prototype,
-        decrementQuantityGoodsInBasket = Function.prototype,
+        // deleteFromBasket = Function.prototype,
+        // incrementQuantityGoodsInBasket = Function.prototype,
+        // decrementQuantityGoodsInBasket = Function.prototype,
     } = props;
 
-    const { example } = useContext(ShopContext);
-    console.log(example);
+    const {
+        deleteFromBasket,
+        incrementQuantityGoodsInBasket,
+        decrementQuantityGoodsInBasket,
+    } = useContext(ShopContext);
 
     return (
         <li className='collection-item'>

@@ -27,7 +27,7 @@ export function reducer(state, { type, payload }) {
             return {
                 ...state,
                 order: newOrder,
-                alertName: payload.name,
+                alertName: payload.displayName,
             };
         }
         case 'DELETE_FROM_BASKET':
@@ -74,6 +74,12 @@ export function reducer(state, { type, payload }) {
             return {
                 ...state,
                 alertName: '',
+            };
+        case 'SET_GOODS':
+            return {
+                ...state,
+                goods: payload || [],
+                loading: false,
             };
 
         default:
